@@ -1,0 +1,83 @@
+/* Hero Section */
+#hero {
+	display: flex;
+	/* background: url('..../images/vector/hero/hero--image.png'); */
+	position: relative;
+	overflow: hidden;
+	padding: 8rem 7rem;
+	padding-bottom: 13rem;
+}
+#heros::after{
+    content: url("../images/vector/hero/dots_narrow.png");
+    position: absolute;
+    top: 30%;
+    left: -40%;
+}
+	.hero__content {
+		flex-basis: 50%;
+		/* padding-left: 6rem; */
+	}
+	.hero__image {
+		flex-basis: 50%;
+	}
+	.hero__image img {
+		position: absolute;
+		right: -23em;
+		width: 65%;
+		top: 2rem;
+	}
+	.hero__title-wrap {
+		position: relative;
+		font-size: clamp(3rem,7vw,8rem);
+	}
+    .hero__title-wrap img {
+        position: absolute;
+        bottom: -2.6em;
+        right: -1.4em;
+        z-index: 0;
+    }
+	@media (min-width:768px){
+		.hero__after {
+			margin-top: -10rem;
+		}
+	}
+	@media (max-width:768px){
+		#hero {
+			padding: 3rem;
+		}
+	}
+/* End Hero Section */
+/* -------------------------------------------------- */
+/* Brand About */
+#brand-about {
+	background-image: url('../images/vector/hero/Artboard – 1.svg');
+	padding: 8rem 0;
+	background-repeat: no-repeat;
+	background-position: 110% 0;
+	background-size: contain;
+}
+.brand__title-wrap{
+	position: relative;
+}
+.brand__title-wrap img {
+	position: absolute;
+	width: 56%;
+	top: -11.8em;
+	right: -9em;
+	z-index: 0;
+}
+/* End Brand About */
+
+/* Brand Craft */
+#brand-craft{
+    margin-top: -6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.brand-craft__image {
+	flex-basis: 50%;
+	padding: 1em;
+}
+.brand-craft__content{
+    flex-basis: 40%;
+}

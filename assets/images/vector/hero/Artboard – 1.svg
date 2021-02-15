@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="846" height="615" viewBox="0 0 846 615">
+  <defs>
+    <clipPath id="clip-Artboard_1">
+      <rect width="846" height="615"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <rect width="846" height="615" fill="rgba(255,255,255,0)"/>
+    <g id="Group_1097" data-name="Group 1097" transform="translate(-960.414 -2277.008)">
+      <g id="Group_37" data-name="Group 37" transform="matrix(-0.682, -0.731, 0.731, -0.682, 1704.701, 3500.233)">
+        <path id="Path_271" data-name="Path 271" d="M-.045,50.536S161.812-78.43,225.078,75.233s201.757,93.716,229.984,77.286S624.029,60.647,681.335,269.065,907.39,391.748,907.39,391.748" transform="matrix(-0.875, 0.485, -0.485, -0.875, 990.104, 355.701)" fill="none" stroke="#cce1ff" stroke-width="2"/>
+      </g>
+      <g id="Group_70" data-name="Group 70" transform="translate(960.414 2277.883)">
+        <g id="Group_17" data-name="Group 17" transform="translate(0 0)">
+          <g id="Ellipse_34" data-name="Ellipse 34" fill="none" stroke="#ddedfc" stroke-width="2">
+            <ellipse cx="306.5" cy="307" rx="306.5" ry="307" stroke="none"/>
+            <ellipse cx="306.5" cy="307" rx="305.5" ry="306" fill="none"/>
+          </g>
+          <g id="Ellipse_33" data-name="Ellipse 33" transform="translate(100 101)" fill="none" stroke="#ddedfc" stroke-width="2">
+            <circle cx="206" cy="206" r="206" stroke="none"/>
+            <circle cx="206" cy="206" r="205" fill="none"/>
+          </g>
+          <g id="Ellipse_32" data-name="Ellipse 32" transform="translate(196 196)" fill="none" stroke="#ddedfc" stroke-width="2">
+            <ellipse cx="110.5" cy="111" rx="110.5" ry="111" stroke="none"/>
+            <ellipse cx="110.5" cy="111" rx="109.5" ry="110" fill="none"/>
+          </g>
+        </g>
+        <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(292 292)" fill="#2870db" stroke="#cce1ff" stroke-width="8">
+          <ellipse cx="14.5" cy="15" rx="14.5" ry="15" stroke="none"/>
+          <ellipse cx="14.5" cy="15" rx="10.5" ry="11" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

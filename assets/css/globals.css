@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+:root{
+    --primary-color: #2870DB;
+    --black-color: #585858;
+
+    --gray-dark-color: #7B7B7B;
+    --gray-medium-color: #8B8B8B;
+    --gray-light-color: #DBDBDB;
+}
+
+*{box-sizing: border-box;}
+a{text-decoration: none;}
+a:hover:active:focus:focus-within:visited {
+	color: var(--primary-color);
+}
+::-webkit-input-placeholder { /* Edge */color: #fff;}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */color: #fff;}::placeholder {color: #fff;}
+
+html,
+body{
+  padding: 0;
+  margin: 0; 
+  background: linear-gradient(150deg, #F6FAFC, #fff); 
+  font-family: 'Poppins', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif; */
+}
+p{
+	font-size: 15px;
+	font-family: "Poppins Light", sans-serif;
+	color: var(--gray-medium-color);
+	line-height: 1.6em;
+}
+h1>span,h2>span,h3>span,h4>span,h5>span{
+  color: var(--primary-color);
+}
+img{
+  width: 100%;
+}
+input {
+	font-family: 'Poppins', sans-serif;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 1em 2em;
+	border-radius: 2em;
+	font-size: 1em;
+}
+main{
+  padding:0;
+}
+section {
+	padding: 6rem 6rem;
+}
+.title-head{
+  text-align: center;
+}
+.title {
+  	font-family: 'Poppins Black', sans-serif;
+	color: var(--black-color);
+	font-size: clamp(19px, 3vw, 4rem);
+	text-align: left;
+	display: inline-block;
+	margin: 0;
+	line-height: 1.2em;
+	z-index: 1;
+	position: relative;
+}
+.prime-title {
+	font-family: 'Poppins Black', sans-serif;
+	color: var(--primary-color);
+  font-size: clamp(3rem,7vw,8rem);
+	line-height: 1em;
+	margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.title-large{
+    font-family: 'Poppins Black', sans-serif;   
+    color: var(--primary-color);
+}
+.subtitle {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+  font-size: clamp(14px, 1.3vw, 20px);
+	color: var(--gray-medium-color);
+	margin: 3rem 0 2rem;
+} 
+.after--cricle{
+  /* position: relative; */
+}
+.after--cricle:after{
+  content: url('/images/vector/hero/Artboard – 1.svg');
+  position: absolute;
+  width: 60%;
+  top: -11.4em;
+  right: -7.6em;
+  z-index: 0;
+}
+.dots-left{
+	position: absolute;
+	width: 100px;
+	left: -9px;
+	top: 21px;
+}
+.dots-top {
+	position: absolute;
+	width: 160px;
+	top: -3rem;
+	right: 29%;
+	z-index: 0;
+}
+.color-primary-blue{
+  font-weight: 500;
+  color: #2870DB;
+}
+.text-right {
+	text-align: left !important;
+}
+.center {
+	display: flex;
+	justify-content: center;
+}
+.head{
+  text-align: center;
+  margin-bottom: 4em;
+}
+.head .subtitle{
+  margin-top: 1em;
+}
+.button {
+  background: #2870DB;
+  border: 1px solid #2870DB;
+  box-shadow: rgba(0, 0, 0, 0.27) 0px 2px 32px;
+  color: #fff;
+  padding: 0.7em 2.5em;
+  font-size: clamp(12px, 1.3vw, 18px);
+  border-radius: 2rem;
+  border-bottom-right-radius: 6px;
+  font-family: 'Poppins Semi Bold 600', sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgb(40, 112, 219) 0px 0 0px;
+  box-shadow: rgba(0, 0, 0, 0.27) 0px 2px 32px;
+}
+.button:hover {
+	transform: scale(1.1);
+	box-shadow: rgba(40, 112, 219, 0.52) 0px 0 20px;
+}
+.icon {
+	width: 30px;
+}
+
+/* ==============
+    Grid Layout */
+/* .row__col-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width:768px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.one-half{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+  padding-left: 20px;
+  padding-right: 20px;  
+  padding: 20px;
+} */
+/* / Grid Layout 
+=================*/
