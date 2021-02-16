@@ -158,12 +158,12 @@ section > div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	max-width: 75%;
+	max-width: 85%;
 	margin: auto;
 }
 .services__grid-col {
 	flex-basis: 20rem;
-	margin: 2rem 0;
+	margin: 1.5rem 0;
 }
   @media (max-width:768px) and (min-width: 300px){
     .services__grid{
@@ -188,14 +188,15 @@ section > div {
   }
   .services__grid-col:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    border: 1px solid rgba(203, 203, 203, 0)
+    border: 1px solid rgba(203, 203, 203, 0);
+    transform: scale(1.1,1.1);
   }
   .services__grid-col--active{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border: 0px solid #CBCBCB;
   }
   .services__grid-icon-wrapper {
-    background-color: gra;
+    background-color: var(--gray-light-color);
     padding: 15px;
     border-radius: 1.4em;
     width: 5em;
@@ -211,8 +212,8 @@ section > div {
 .services__grid-col--active  .services__grid-icon-wrapper {
     background-color: #2870DB;
 }
-.services__grid-col--active  .services__grid-icon-wrapper svg{
-    color: #fff;
+.services__grid-col--active  .services__grid-icon-wrapper svg path{
+    fill: #fff;
 }
 .services__grid-title {
     /* font-family: 'Poppins Semi bold 600', sans-serif; */
@@ -234,11 +235,21 @@ section > div {
 .services__grid-col * {
   transition: all 0.3s ease-in-out;
 }
-.services__grid-col:hover .services__grid-icon-wrapper{
-  background-color: var(--color-primary__blue);
+.services__grid-col:hover .services__grid-icon-wrapper,
+.services__grid-col:hover .services__grid-icon-wrapper
+{
+  background-color: rgb(0, 89, 255);
 }
-.services__grid-col:hover .services__grid-title{
-  color: var(--color-primary__blue);
+.services__grid-col:hover .services__grid-link-icon{
+  background-color: var(--primary-color);
+}
+.services__grid-col:hover .services__grid-link-icon svg path{
+  fill: #fff;
+}
+.services__grid-col:hover .services__grid-title,
+.services__grid-col:hover .services__grid-link
+{
+  color: rgb(0, 89, 255);
 }
 .services__grid-col:hover .svg {
 	fill: #fff;
@@ -247,16 +258,19 @@ section > div {
 	text-decoration: underline;
 	margin-right: 16px;
 	padding-bottom: 4px;
-	color: var(--color-primary__blue);
+	color: var(--gray-medium-color);
 }
 .services__grid-link-icon {
-	background: rgb(0, 89, 255);
-	padding: 12px 11px 6px;
+	background: var(--gray-light-color);
+	padding: 10px 9px 4px;
 	border-radius: 64px;
 	text-align: center;
 }
+.services__grid-link-icon svg{
+	width: 18px;
+}
 .services__grid-link-icon svg path {
-	fill: rgb(255, 255, 255);
+	/* fill: rgb(255, 255, 255); */
 }
 
 /* / Service Section 
@@ -386,7 +400,7 @@ section > div {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	font-size: 1.5em;
-	color: var(--color-primary__blue);
+	color: rgb(0, 89, 255);
 }
 /* End About Page */
 
@@ -472,9 +486,9 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 .form__input:focus {
-  color: var(--color-primary__blue) !important;
+  color: rgb(0, 89, 255) !important;
   border-color: transparent;
-  border-bottom-color: var(--color-primary__blue) !important;
+  border-bottom-color: rgb(0, 89, 255) !important;
 	transform: scale(1.1 , 1.1);
 }
 
@@ -483,7 +497,7 @@ footer {
 }
 
 .form__input:focus::placeholder{
-  color: var(--color-primary__blue) !important;
+  color: rgb(0, 89, 255) !important;
 }
 
 .contact__form-content,
@@ -526,12 +540,12 @@ footer {
 	padding: 1em 2em;
 }
 .contact__textarea:focus{
-  border-color:var(--color-primary__blue);
-  color: var(--color-primary__blue) !important;
+  border-color:rgb(0, 89, 255);
+  color: rgb(0, 89, 255) !important;
   	transform: scale(1.07 , 1.07);
 }
 .contact__textarea:focus::placeholder{
-  color: var(--color-primary__blue) !important;
+  color: rgb(0, 89, 255) !important;
 }
 
 
