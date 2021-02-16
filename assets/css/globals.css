@@ -18,21 +18,32 @@ a:hover:active:focus:focus-within:visited {
 	color: var(--primary-color);
 }
 ::-webkit-input-placeholder { /* Edge */color: #fff;}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */color: #fff;}::placeholder {color: #fff;}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */color: #fff;}
+::placeholder {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
 
 html,
 body{
   padding: 0;
   margin: 0; 
-  background: linear-gradient(150deg, #F6FAFC, #fff); 
+  background: transparent; 
   font-family: 'Poppins', sans-serif;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif; */
 }
-p{
-	font-size: 15px;
+
+html{
+ background: rgb(237,248,252);
+background: linear-gradient(90deg, rgba(237,248,252,1) 0%, rgba(246,250,252,1) 100%); 
+}
+p {
+	font-size: 16px;
 	font-family: "Poppins Light", sans-serif;
 	color: var(--gray-medium-color);
 	line-height: 1.6em;
+	margin-top: 2rem;
 }
 h1>span,h2>span,h3>span,h4>span,h5>span{
   color: var(--primary-color);
@@ -53,7 +64,7 @@ main{
   padding:0;
 }
 section {
-	padding: 6rem 6rem;
+	padding: 6rem 10rem;
 }
 .title-head{
   text-align: center;
@@ -88,10 +99,16 @@ section {
 	font-weight: 500;
   font-size: clamp(14px, 1.3vw, 20px);
 	color: var(--gray-medium-color);
-	margin: 3rem 0 2rem;
+	margin: 1rem 0 2rem;
 } 
-.after--cricle{
-  /* position: relative; */
+
+.container{
+	max-width: 79%;
+	margin: auto;
+}
+@media (min-width:900px){
+  .order-1{order: 1;}
+  .order-2{order: 2;}
 }
 .after--cricle:after{
   content: url('/images/vector/hero/Artboard – 1.svg');
@@ -129,6 +146,10 @@ section {
   text-align: center;
   margin-bottom: 4em;
 }
+.page-head {
+	padding: 4rem 0rem 2rem;
+	text-align: center;
+}
 .head .subtitle{
   margin-top: 1em;
 }
@@ -154,7 +175,11 @@ section {
 .icon {
 	width: 30px;
 }
-
+.backtotop {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+}
 /* ==============
     Grid Layout */
 /* .row__col-2{

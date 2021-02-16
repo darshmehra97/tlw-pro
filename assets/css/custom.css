@@ -24,7 +24,7 @@
 		position: absolute;
 		right: -23em;
 		width: 65%;
-		top: 2rem;
+		top: 4rem;
 	}
 	.hero__title-wrap {
 		position: relative;
@@ -142,9 +142,10 @@
 #testimonial-slider .owl-next {
 	background: #2870db !important;
 	border-radius: 38px !important;
-	width: 41px;
+	width: 31px;
 	padding-top: 3px !important;
-	height: 41px;
+	height: 31px;
+	margin: 15px;
 }
 .avatar {
 	width: 200px;
@@ -174,6 +175,40 @@
 	margin: auto;
 }
 
-#get-consult {
-	padding-bottom: 0;
+#testimonial {
+	background-image: url('../images/cloud-bg.svg');
+	padding: 8rem 0;
+	background-repeat: no-repeat;
+	background-position: 110% 0;
+	background-size: contain;
 }
+#get-consult {
+
+}
+
+/* About Page */
+#about{
+	padding-top: 9rem;
+}
+.col-md-6.about__image img {
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+
+/* Result Driven Team */
+#result-driven {
+	padding: 8rem 0;
+	background-repeat: no-repeat;
+	background-position: 110% 0;
+	background-size: contain;
+	background-image: url('assets/images/cloud-bg.svg');
+}
+
+#service-page section{
+	padding: 7rem 10rem;
+}
+.padd img{
+	width: 90%;
+}
+
