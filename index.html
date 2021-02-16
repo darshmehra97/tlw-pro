@@ -270,49 +270,101 @@
 		<div class="head">
 			<h1 class="title">Our <span>Happy</span> clients</h1>
 		</div>
-		<div class="slider">
+		<div class="slider" id="testimonial-slider">
 			<div class="owl-carousel owl-theme">
 				<div class="item">
-					<h4>1</h4>
+					<p>Your cooperation with TLW is a true
+						partnership. Whenever we faced challenges
+						this year, we could rely on TLW for our
+						urgent staffing needs and time-critical
+						deliverables.</p>
+					<div class="avatar">
+						<figure>
+							<img src="./assets/images/avatar.jpg" alt="">
+						</figure>
+						<div class="avatar-data">
+							<span class="name">Mike Smith</span>
+							<span class="position">CEO</span>
+						</div>
+					</div>
 				</div>
 				<div class="item">
-					<h4>2</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex possimus aut, nihil explicabo eum temporibus
+						repellendus, corrupti rerum odit repudiandae praesentium ratione molestias? Placeat cum aspernatur facere unde porro
+						maiores.</p>
+					<div class="avatar">
+						<figure>
+							<img src="./assets/images/avatar.jpg" alt="">
+						</figure>
+						<div class="avatar-data">
+							<span class="name">Kally</span>
+							<span class="position">Manager</span>
+						</div>
+					</div>
 				</div>
 				<div class="item">
-					<h4>3</h4>
-				</div>
-				<div class="item">
-					<h4>4</h4>
-				</div>
-				<div class="item">
-					<h4>5</h4>
-				</div>
-				<div class="item">
-					<h4>6</h4>
-				</div>
-				<div class="item">
-					<h4>7</h4>
-				</div>
-				<div class="item">
-					<h4>8</h4>
-				</div>
-				<div class="item">
-					<h4>9</h4>
-				</div>
-				<div class="item">
-					<h4>10</h4>
-				</div>
-				<div class="item">
-					<h4>11</h4>
-				</div>
-				<div class="item">
-					<h4>12</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex possimus aut, nihil explicabo eum temporibus
+						repellendus, corrupti rerum odit repudiandae praesentium ratione molestias? Placeat cum aspernatur facere unde porro
+						maiores.</p>
+					<div class="avatar">
+						<figure>
+							<img src="./assets/images/avatar.jpg" alt="">
+						</figure>
+						<div class="avatar-data">
+							<span class="name">John</span>
+							<span class="position">Designer</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	
+	<section id="get-consult" class="vertical">
+		<div class="head">
+			<h1 class="title">Get a <span>Free</span><br /> Consultation</h1>
+			<h3 class="subtitle">We Always Try To Implement Our <span>Creative Ideas</span> At The Highest <br />Level.
+				Tell Us About <span>Your Project</span> And We Will Make It Work. </h3>
+		</div>
+		<img src="assets/images/vector/lets-talk.svg" alt="agency servicess" />
+		</section>
+		
+		<section id="call-to-action">
+			<div class="call-to-action__wrapper">
+				<input class="call-to-action__input" type="text" placeholder='Name' />
+				<input class="call-to-action__input" type="text" placeholder='Email' />
+				<input class="call-to-action__submit" type="submit" value="Let's Talk" />
+		</div>
+	</section>
 
 
+	<footer>
+		<div class="footer__widget-wrapper">
+			<div class="footer__widget widget-1">
+				<h1 class="footer__widget-title">Working Hours</h1>
+				<div class="footer__widget-content">
+					<p>Mon - Fri: 9 am - 6 pm <br /> Sat, Sun: Holiday</p>
+				</div>
+			</div>
+			<div class="footer__widget widget-2">
+				<h1 class="footer__widget-title">Working Hours</h1>
+				<div class="footer__widget-content">
+					<p>Mon - Fri: 9 am - 6 pm <br /> Sat, Sun: Holiday</p>
+				</div>
+			</div>
+			<div class="footer__widget widget-3">
+				<h1 class="footer__widget-title">Working Hours</h1>
+				<div class="footer__widget-content">
+					<p>Mon - Fri: 9 am - 6 pm <br /> Sat, Sun: Holiday</p>
+				</div>
+			</div>
+			<div class="footer__widget widget-4">
+				<img class="footer__widget-logo" width='250' height='100' src="assets/images/logo.svg" />
+				<p class="copyright">Copyright &#169; {getYear()} Tech Lab Work Inc.</p>
+	
+			</div>
+		</div>
+	</footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <!-- <script src="./assets/js/bootstrap.min.js" crossorigin="anonymous"></script> -->
@@ -322,19 +374,36 @@
 		$('.owl-carousel').owlCarousel({
 			loop: true,
 			margin: 10,
+
+			dots: false,
 			nav: true,
+			navText: [
+				'<img class="testimonial-nav" src="assets/images/vector/icons/left.svg" width="15" height="15" alt="">',
+				'<img class="testimonial-nav" src="assets/images/vector/icons/right.svg" width="15" height="15" alt="">'
+			],
+			autoplayTimeout: 3000,
+			autoplay: true,
+			// autoWidth: true,
+			smartSpeed: 1300,
+			// animateOut: 'fadeOut',
+			autoplayHoverPause: true,
 			responsive: {
 				0: {
 					items: 1
 				},
 				600: {
-					items: 3
+					items: 1
 				},
 				1000: {
-					items: 5
+					items: 1
 				}
 			}
 		})
+																																								$(".owl-carousel").owlCarousel({
+																																									nav: true,
+																																									navText: ['<img class="quote-bottom" src="./assets/images/vector/icons/check.svg" width="15" height="15" alt="">']
+																																								});
+																												// $('.owl-carousel').attr("width", "10%")
 	</script>
   </body>
 </html>

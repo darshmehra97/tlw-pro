@@ -93,3 +93,87 @@
 	max-width: 49%;
 	display: inline-block;
 }
+
+/* Testimonial Slider */
+/* Custom */
+.item {
+	background: var(--primary-color);
+	max-width: 100%;
+	margin: auto;
+	padding: 4.3rem 5rem;
+	border-radius: 7rem;
+	border-bottom-right-radius: 5px;
+	color: #fff;
+	position: relative;
+	padding-bottom: 25px;
+}
+.item::before {
+	content: url("../images/vector/icons/quote-open.svg");
+	font-family: 'Poppins', sans-serif;
+	width: 25px;
+	display: block;
+	position: absolute;
+	left: 4.3em;
+	top: 2.4em;
+}
+.item::after {
+	content: url("../images/vector/icons/quote-close.svg");
+	font-family: 'Poppins', sans-serif;
+	width: 25px;
+	display: block;
+	position: absolute;
+	right: 5em;
+	bottom: 4em;
+}
+.item p {
+	color: #fff;
+	font-family: 'Poppins Light' , sans-serif;
+	font-size: 1rem;
+	line-height: 1.5em;
+}
+/* .testimonial-nav {
+	background: var(--primary-color);
+	border-radius: 20px;
+	width: 52px;
+	height: 32px;
+	padding: 8px;
+} */
+#testimonial-slider .owl-prev,
+#testimonial-slider .owl-next {
+	background: #2870db !important;
+	border-radius: 38px !important;
+	width: 41px;
+	padding-top: 3px !important;
+	height: 41px;
+}
+.avatar {
+	width: 200px;
+	margin: auto;
+	display: flex;
+	margin-top: 44px;
+}
+.avatar figure {
+	width: 87px;
+	display: inline-block;
+	margin: 0;
+	border-radius: 18px;
+	margin-right: -20px;
+}
+.owl-carousel .owl-item img {
+	display: block;
+	width: 100%;
+	border-radius: 28px;
+}
+.avatar-data {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+#testimonial-slider {
+	max-width: 50%;
+	margin: auto;
+}
+
+#get-consult {
+	padding-bottom: 0;
+}
