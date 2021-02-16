@@ -203,7 +203,7 @@ section > div {
     height: 5em;
     display: flex;
     justify-content: center;
-    }
+    } 
   .services__grid-icon-wrapper svg {
     color: #A5A5A5;
     width: 2em;
