@@ -81,3 +81,15 @@
 .brand-craft__content{
     flex-basis: 40%;
 }
+
+#why-us {
+	background-image: url('./assets/images/vector/hero/Artboard – 1.svg');
+	padding: 8rem 0;
+	background-repeat: no-repeat;
+	background-position: 109% 0;
+	background-size: 50%;
+}
+#why-us .vertical img {
+	max-width: 49%;
+	display: inline-block;
+}

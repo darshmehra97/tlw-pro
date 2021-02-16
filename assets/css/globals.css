@@ -59,7 +59,7 @@ section {
   text-align: center;
 }
 .title {
-  	font-family: 'Poppins Black', sans-serif;
+	font-family: 'Poppins Black', sans-serif;
 	color: var(--black-color);
 	font-size: clamp(19px, 3vw, 4rem);
 	text-align: left;
@@ -68,6 +68,7 @@ section {
 	line-height: 1.2em;
 	z-index: 1;
 	position: relative;
+	text-transform: capitalize;
 }
 .prime-title {
 	font-family: 'Poppins Black', sans-serif;
