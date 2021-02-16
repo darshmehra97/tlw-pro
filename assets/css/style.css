@@ -161,6 +161,13 @@ section > div {
 	max-width: 85%;
 	margin: auto;
 }
+
+@media (min-width:1690px){
+  .services__grid {
+    max-width: 73% !important;
+  }
+}
+
 .services__grid-col {
 	flex-basis: 20rem;
 	margin: 1.5rem 0;
