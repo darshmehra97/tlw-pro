@@ -17,7 +17,17 @@
 
     <title>TechLab Work - A Next Generation Agency</title>
   </head>
-<body>
+<body data-barba="wrapper">
+
+	<div data-barba="wrapper">
+		<p>navbar is this</p>
+	
+		<main data-barba="container" data-barba-namespace="home">
+			<p>main content is here </p>
+		</main>
+	
+		<p>footer content</p>
+	</div>
 	<header>
 	    <img class="dots-top" src="./assets/images/vector/hero/dots_narrow.png" alt="" />
 		<div class="header__container">
@@ -58,7 +68,7 @@
 	</header>
 	
 	
-	<section id="hero">
+	<section id="hero"  data-barba="container" data-barba-namespace="home">
 		<img class="dots-left" src="../assets/images/vector/hero/dots_narrow.png" alt="" />
 		<div class="hero__content">
 			<div class="hero__title-wrap">
@@ -378,12 +388,30 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <!-- <script src="./assets/js/bootstrap.min.js" crossorigin="anonymous"></script> -->
 	<script src="./assets/js/owl.carousel.min.js"></script>
+	
+	<!-- unpkg -->
+	<!-- <script src="./assets/js/barba.umd.js"></script>
+	<script src="./assets/js/jsdelivr.js"></script> -->
+	<!-- unpkg -->
+	<script src="https://unpkg.com/@barba/core"></script>
+	
+	<!-- jsdelivr -->
+	<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="./assets/js/custom.js" crossorigin="anonymous"></script>
+	<script>
+	barba.init({
+		schema: {
+			prefix: 'data-custom',
+			wrapper: 'wrap'
+		}
+	});
+
+	</script>
+	<!-- jsdelivr -->
 	<script>
 		$('.owl-carousel').owlCarousel({
 			loop: true,
 			margin: 10,
-
 			dots: false,
 			nav: true,
 			navText: [

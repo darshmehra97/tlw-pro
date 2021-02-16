@@ -208,6 +208,9 @@
 #service-page section{
 	padding: 7rem 10rem;
 }
+#call-to-action{
+	padding: 0 !important;
+}
 .padd img{
 	width: 90%;
 }

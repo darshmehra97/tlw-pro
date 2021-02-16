@@ -393,6 +393,11 @@ section > div {
 
 /* About Page */
 #brand-value{
+	background-image: url('../images/right-ring.svg');
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: contain;
+	padding-bottom: 0;
   grid-template-columns: .7fr 1fr;
 }
 .brand-value__list {
@@ -521,7 +526,7 @@ footer p{
 /* Contact Us */
 #contact .head .title{
 	font-size: 4rem;
-	color: #2870db;
+	/* color: #2870db; */
 }
 #contact .subtitle {
 	font-size: 2rem;
@@ -532,14 +537,18 @@ footer p{
   border-bottom-right-radius: 0;
 }
 .contact__form-box {
-	display: flex;
+	/* display: flex; */
 	box-shadow: 7px 3px 50px 3px #00000014;
-  border-radius: 67px;
-  border-bottom-right-radius: 0;
-  padding: 3.3rem;
-  position: relative;
+	border-radius: 67px;
+	border-bottom-right-radius: 0;
+	padding: 2.3rem;
+	position: relative;
+	background: #fdfeff;
 }
-#contact .form__input.input {
+.contact__image{
+  padding: 2rem;
+}
+ .form__input.input {
   border-radius: 0;
     border-color: transparent;
   color:  #565656AB;
@@ -554,6 +563,9 @@ footer p{
 }
 
 #contact ::placeholder {
+  color: #7B7B7B;
+}
+#career ::placeholder {
   color: #7B7B7B;
 }
 
@@ -578,7 +590,7 @@ footer p{
 	margin: 2rem 0;
 	width: 100%;
 	border-bottom: 1px solid #ABABABAB;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 #contact .button {
@@ -608,6 +620,39 @@ footer p{
 .contact__textarea:focus::placeholder{
   color: var(--primary-color) !important;
 }
+#map {
+	padding-left: 0;
+	padding-right: 0;
+}
+.map_frame{
+  width: 100%;
+}
+.location {
+	padding: 0 2rem;
+}
+
+
+#career .head {
+	margin: 6rem 0 4rem;
+}
+#career .subtitle {
+	font-size: 1rem;
+	margin: 0.5em auto;
+	line-height: 1.2em;
+	max-width: 452px;
+	font-weight: 500;
+}
+.center-img {
+	max-width: 65%;
+	margin: 2rem auto;
+	display: block;
+}
+#career .button {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
 
 
 /* Service Page */
