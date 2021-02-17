@@ -50,7 +50,7 @@
 /* -------------------------------------------------- */
 /* Brand About */
 #brand-about {
-	background-image: url('../images/vector/hero/Artboard – 1.svg');
+	background-image: url('../images/vector/hero/spring-right-tail.svg');
 	padding: 8rem 0;
 	background-repeat: no-repeat;
 	background-position: 110% 0;
@@ -143,7 +143,7 @@
 	background: #2870db !important;
 	border-radius: 38px !important;
 	width: 31px;
-	padding-top: 3px !important;
+	padding-top: 0px !important;
 	height: 31px;
 	margin: 15px;
 }
@@ -212,6 +212,138 @@
 	padding: 0 !important;
 }
 .padd img{
-	width: 90%;
+	width: 90%; 
 }
 
+
+
+
+/* Cookie Banner  */
+.cookie-container {
+	position: fixed;
+	bottom: -22rem;
+	left: 0;
+	right: 0;
+	background: #2870db;
+	color: #f5f6fa;
+	padding: 0 32px;
+	box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+	transition: 400ms;
+	z-index: 22;
+	width: 74%;
+	margin: auto;
+	border-radius: 5em;
+	display: flex;
+	place-items: center;
+	justify-content: space-around;
+}
+
+
+.cookie-container p {
+	color: #fff;
+	font-size: 13px;
+	margin: 1rem 2rem;
+}
+.cookie-container a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cookie-container .button {
+	background: #fff;
+	color: #2870db;
+	font-size: 15px;
+	padding: 5px 24px;
+}
+.cookie-container.active {
+  bottom: 1rem;
+}
+@media (max-width:768px){
+
+.cookie-container {
+
+	right: unset;
+	background: #2870db;
+	color: #f5f6fa;
+	padding: 17px;
+	display: block;
+	border-radius: 0;
+	border-top-right-radius: 2em;
+	text-align: left;
+}
+.cookie-container.active {
+	bottom: 0;
+	left: 0;
+	right: unset;
+}
+.cookie-container p {
+	color: #fff;
+	font-size: 13px;
+	margin: 0 0 10px;
+}
+.button.cookie-btn {
+	margin: auto;
+	display: block;
+}
+}
+
+
+
+
+
+
+
+
+/* Loading Screen Styling */
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0) skewX(0);
+  transform-origin: top left;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Loading Screen Styling Ends */
+
+/* ================= */
+
+.transition-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.transition-container span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  background: var(--primary-color);
+}
+#from-bottom{
+	/* background: #7db1ff; */
+}

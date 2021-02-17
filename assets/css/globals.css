@@ -1,8 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
-
 :root{
     --primary-color: #2870DB;
     --black-color: #585858;
@@ -11,7 +9,7 @@ html {
     --gray-medium-color: #8B8B8B;
     --gray-light-color: #DBDBDB;
 }
-
+ 
 *{box-sizing: border-box;}
 a{text-decoration: none;}
 a:hover:active:focus:focus-within:visited {
@@ -40,7 +38,8 @@ background: linear-gradient(90deg, rgba(237,248,252,1) 0%, rgba(246,250,252,1) 1
 }
 p {
 	font-size: 16px;
-	font-family: "Poppins Light", sans-serif;
+	font-family: "Poppins", sans-serif;
+  font-weight:300;
 	color: var(--gray-medium-color);
 	line-height: 1.6em;
 	margin-top: 2rem;
@@ -70,7 +69,8 @@ section {
   text-align: center;
 }
 .title {
-	font-family: 'Poppins Black', sans-serif;
+	font-family: 'Poppins', sans-serif;
+  font-weight: 900;
 	color: var(--black-color);
 	font-size: clamp(19px, 3vw, 4rem);
 	text-align: left;
@@ -82,7 +82,9 @@ section {
 	text-transform: capitalize;
 }
 .prime-title {
-	font-family: 'Poppins Black', sans-serif;
+	font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+      /* font-family: 'Ballet', cursive; */
 	color: var(--primary-color);
   font-size: clamp(3rem,7vw,8rem);
 	line-height: 1em;
@@ -92,6 +94,7 @@ section {
 }
 .title-large{
     font-family: 'Poppins Black', sans-serif;   
+    font-weight: 900;
     color: var(--primary-color);
 }
 .subtitle {
@@ -108,7 +111,7 @@ section {
 }
 @media (min-width:900px){
   .order-1{order: 1;}
-  .order-2{order: 2;}
+  .flex-flex-order-2{order: 2;}
 }
 .after--cricle:after{
   content: url('/images/vector/hero/Artboard – 1.svg');
@@ -118,11 +121,11 @@ section {
   right: -7.6em;
   z-index: 0;
 }
-.dots-left{
+.dots-left {
 	position: absolute;
 	width: 100px;
 	left: -9px;
-	top: 21px;
+	top: 9rem;
 }
 .dots-top {
 	position: absolute;
