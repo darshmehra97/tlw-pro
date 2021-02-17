@@ -67,8 +67,8 @@
 		</div>
 	</header>
 	
-	
-	<section id="hero"  data-barba="container" data-barba-namespace="home">
+	<div data-barba="container" data-barba-namespace="home">
+		<section id="hero">
 		<img class="dots-left" src="../assets/images/vector/hero/dots_narrow.png" alt="" />
 		<div class="hero__content">
 			<div class="hero__title-wrap">
@@ -349,7 +349,7 @@
 				<input class="call-to-action__submit" type="submit" value="Let's Talk" />
 		</div>
 	</section>
-
+	</div>
 	<div class="backtotop"><a href="#"><img src="./assets/images/backtotop.svg" alt="" style="width: 40px;"></a></div>
 	<footer>
 		<div class="footer__widget-wrapper">
@@ -392,21 +392,31 @@
 	<!-- unpkg -->
 	<!-- <script src="./assets/js/barba.umd.js"></script>
 	<script src="./assets/js/jsdelivr.js"></script> -->
+	<!-- Barbra JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 	<!-- unpkg -->
 	<script src="https://unpkg.com/@barba/core"></script>
-	
 	<!-- jsdelivr -->
 	<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <script src="./assets/js/custom.js" crossorigin="anonymous"></script>
-	<script>
-	barba.init({
-		schema: {
-			prefix: 'data-custom',
-			wrapper: 'wrap'
-		}
-	});
 
-	</script>
+    <script src="./assets/js/custom.js" crossorigin="anonymous"></script>
+<script>
+	barba.init({
+		transitions: [{
+			name: 'opacity-transition',
+			leave(data) {
+				return gsap.to(data.current.container, {
+					opacity: 0
+				});
+			},
+			enter(data) {
+				return gsap.from(data.next.container, {
+					opacity: 0
+				});
+			}
+		}]
+	});
+</script>
 	<!-- jsdelivr -->
 	<script>
 		$('.owl-carousel').owlCarousel({
