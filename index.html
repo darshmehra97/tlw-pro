@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/custom.css">
 	<link rel="stylesheet" href="./assets/css/responsive.css">
+	<link rel="stylesheet" href="./assets/css/loader.css">
 
 
 	<title>TechLab Work - A Next Generation Agency</title>
@@ -416,7 +417,19 @@
 		</div>
 		<div class="backtotop"><a href="#"><img src="./assets/images/backtotop.svg" alt="" style="width: 40px;"></a></div>
 	</div>
-
+<div id="loood" class="loader__wrapper">
+	<ul class="loader">
+		<li class="loader__center"></li>
+		<li class="loader__item loader__item-1"></li>
+		<li class="loader__item loader__item-2"></li>
+		<li class="loader__item loader__item-3"></li>
+		<li class="loader__item loader__item-4"></li>
+		<li class="loader__item loader__item-5"></li>
+		<li class="loader__item loader__item-6"></li>
+		<li class="loader__item loader__item-7"></li>
+		<li class="loader__item loader__item-8"></li>
+	</ul>
+</div>
 	</div> <!-- Barbra Container End -->
 	<div class="transition-container">
 			<span id="from-top"></span>
@@ -470,6 +483,27 @@
 		});
 																												// $('.owl-carousel').attr("width", "10%")
 	</script>
+
+
+<script>
+	// const loader__wrapper = document.querySelector('#loood');
+		const loader__wrapper = document.querySelector('#loood');
+		const loader = document.querySelector('.loader');
+
+		function init() {
+			setTimeout(() => {
+				// loader.style.opacity = 0;
+				// loader.style.display = 'block';
+
+				loader__wrapper.className += " loader__disable";
+				// setTimeout(() => (loader__wrapper.style.display = 'none'), 5000);
+				// main.style.opacity = 1;
+			}, 1000);
+		}
+
+
+		init(); 
+</script>
 </body>
 
 </html>
