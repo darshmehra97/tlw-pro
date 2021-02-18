@@ -11,8 +11,9 @@ $('.toggle').on('click', function () {
 	// });
 
 
-document.getElementById("year").innerHTML = new Date().getFullYear();
-
+// document.getElementById("year").innerHTML = new Date().getFullYear();
+var cY = new Date().getFullYear();
+document.getElementById("year").innerHTML = cY;
 
 // Cookie
 
