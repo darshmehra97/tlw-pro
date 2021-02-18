@@ -411,13 +411,14 @@
 	margin-right: 33px;
 	background-color: #D1E4FF;
 	border-radius: 100%;
-  display: flex;
-  flex-shrink: 0;
-	width: 100px;
-	height: 100px;
+	display: flex;
+	flex-shrink: 0;
+	width: 87px;
+	height: 87px;
+  margin-right: 18px;
 }
 .brand-value__icon img {
-	width: 40px;
+	width: 34px;
 	align-self: center;
 	height: 40px;
 	margin: auto;
@@ -425,7 +426,7 @@
 .brand-value__title {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	color: var(--primary-color);
 }
 /* End About Page */
@@ -436,7 +437,7 @@
     Footer */
  
 footer {
-	padding: 14em 0 2rem 0;
+	padding: 7em 0 2rem 0;
 	/* padding: 8rem 0; */
 	background-repeat: no-repeat;
 	background-position: 0 0;
