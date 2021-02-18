@@ -31,114 +31,39 @@ setTimeout(() => {
 	}
 }, 2000);
 
-
-
-function pageTransition() {
-	let tl = gsap.timeline({ ease: Expo.easeInOut });
-
-	gsap.to("img_", {
-		duration: 0.4,
-		opacity: 0,
-	});
-
-	tl.set(".transition-container span", { pointerEvents: "all" })
-		.to("span#from-top", {
-			duration: 0.4,
-			transformOrigin: "top center",
-			scaleY: 1,
-			top: "0%",
-			delay: 0.2,
-		})
-		.to(
-			"span#from-bottom",
-			{
-				duration: 0.4,
-				transformOrigin: "bottom center",
-				scaleY: 1,
-				delay: 0.2,
-			},
-			"-=0.6"
-		);
-
-	tl.to("span#from-top", {
-		duration: 0.4,
-		transformOrigin: "bottom center",
-		scaleY: 0,
-		delay: 0.6,
-	})
-		.to(
-			"span#from-bottom",
-			{
-				duration: 0.4,
-				transformOrigin: "top center",
-				scaleY: 0,
-				delay: 0.6,
-			},
-			"-=1"
-		)
-
-		.set(".transition-container span", { pointerEvents: "none" });
-}
-
-function fadeInContent() {
-	let tl = gsap.timeline({ ease: Expo.easeInOut });
-	tl.set(".transition-element", {
-		top: "5%",
-		opacity: 0,
-	})
-		// .set("header", { duration: 0.4, opacity: 0 })
-
-		.to(".transition-element", {
-			duration: 0.4,
-			top: "0%",
-			opacity: 1,
-			stagger: 0.1,
-		})
-		// .to("img", { duration: 0.4, opacity: 0.45 }, "-=0.4");
-}
-
-function fadeOutContent() {
-	let tl = gsap.timeline({ ease: Expo.easeInOut });
-	tl.to(".transition-element", {
-		duration: 0.4,
-		top: "5%",
-		opacity: 0,
-		stagger: -0.1,
-	}).to("img_", { duration: 0.4, opacity: 0 }, "-=0.4");
-}
-
-barba.init({
-	sync: true,
-
-	transitions: [
-		{
-			async leave() {
-				const done = this.async();
-				pageTransition();
-				fadeOutContent();
-				await delay(1200);
-				done();
-			},
-			async enter() {
-				fadeInContent();
-			},
-			async once() {
-				fadeInContent();
-			},
-		},
-	],
-});
-
-function delay(n) {
-	n = n || 2000;
-	return new Promise((done) => {
-		setTimeout(() => {
-			done();
-		}, n);
-	});
-}
+(function () {
+	//===== Prealoder
+	window.onload = function () {
+		window.setTimeout(fadeout, 500);
+	}
+	function fadeout() {
+		document.querySelector('.loader__wrapper').style.opacity = '0';
+		document.querySelector('.loader__wrapper').style.display = 'none';
+	}
+	// WOW active
+	new WOW().init();
+})();
 
 
 
+// function wheel(event) {
+// 	var delta = 0;
+// 	if (event.wheelDelta) { (delta = event.wheelDelta / 120); }
+// 	else if (event.detail) { (delta = -event.detail / 3); }
 
+// 	handle(delta);
+// 	if (event.preventDefault) { (event.preventDefault()); }
+// 	event.returnValue = false;
+// }
 
+// function handle(delta) {
+// 	var time = 0;
+// 	var distance = 500;
+
+// 	$('html, body').stop().animate({
+// 		scrollTop: $(window).scrollTop() - (distance * delta)
+// 	}, time);
+// }
+
+// if (window.addEventListener) { window.addEventListener('DOMMouseScroll', wheel, false); }
+// window.onmousewheel = document.onmousewheel = wheel;

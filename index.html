@@ -23,26 +23,27 @@
 	<link rel="stylesheet" href="./assets/css/custom.css">
 	<link rel="stylesheet" href="./assets/css/responsive.css">
 	<link rel="stylesheet" href="./assets/css/loader.css">
+	<link rel="stylesheet" href="./assets/css/animate.min.css">
 
-	<script>
-		var cY = new Date().getFullYear();
-		document.getElementById("year").innerHTML = cY;
-	</script>
 	<title>TechLab Work - A Next Generation Agency</title>
 </head>
 
-<body data-barba="wrapper">
-	<!-- <div class="loading">
-						<h2>pushing pixels</h2>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div> -->
-	<div data-barba="container" data-barba-namespace="home">
+<body>
+		<!-- Preloader -->
+		<!-- <div class="loader__wrapper">
+			<ul class="loader">
+				<li class="loader__center"></li>
+				<li class="loader__item loader__item-1"></li>
+				<li class="loader__item loader__item-2"></li>
+				<li class="loader__item loader__item-3"></li>
+				<li class="loader__item loader__item-4"></li>
+				<li class="loader__item loader__item-5"></li>
+				<li class="loader__item loader__item-6"></li>
+				<li class="loader__item loader__item-7"></li>
+				<li class="loader__item loader__item-8"></li>
+			</ul>
+		</div> -->
+		<!-- /End Preloader -->
 		<header>
 			<img class="dots-top" src="./assets/images/vector/hero/dots_narrow.png" alt="" />
 			<img class="dots-left" src="../assets/images/vector/hero/dots_narrow.png" alt="" />
@@ -86,32 +87,32 @@
 		<section id="hero">
 			<div class="hero__content">
 				<div class="hero__title-wrap">
-					<h1 class="title prime-title">A Next- <br />Generation<br />Agency</h1>
-					<img src="./assets/images/vector/hero/title-spring.svg" alt="agency servicess" />
+					<h1 class="title prime-title wow fadeInDown" data-wow-delay="0.5s">A Next- <br />Generation<br />Agency</h1>
+					<img src="./assets/images/vector/hero/title-spring.svg" class="wow fadeInRight" data-wow-delay="0.5s" alt="agency servicess" />
 				</div>
-				<h3 class="subtitle">We are the branding and marketing agency for <br /><span>the world’s most exciting tech companies.</span></h3>
-				<button class="button">Get a quote</button>
+				<h3 class="subtitle wow fadeInUp" data-wow-delay="0.5s">We are the branding and marketing agency for <br /><span>the world’s most exciting tech companies.</span></h3>
+				<button class="button wow fadeInLeft"  data-wow-delay="0.5s">Get a quote</button>
 			</div>
 			<div class="hero__image">
-				<img src="./assets/images/vector/hero/hero--image.png" alt="">
+				<img class="wow fadeInRight" data-wow-delay="0.5s" src="./assets/images/vector/hero/hero--image.png" alt="">
 			</div>
 		</section>
 		<div class="hero__after">
-			<img src="assets/images/vector/hero/wave-lines.svg" alt="agency servicess">
+			<img class="wow fadeInUp" data-wow-delay="0.8s" src="assets/images/vector/hero/wave-lines.svg" alt="agency servicess">
 		</div>
 		<section id="brand-about" class="center">
-			<h1 class="brand-about__title title">We Are A Full Service <br /><span> Development & Interactive</span><br />Agency Based In Canada </h1>
+			<h1 class="brand-about__title title wow fadeInUp" data-wow-delay="2">We Are A Full Service <br /><span> Development & Interactive</span><br />Agency Based In Canada </h1>
 		</section>
 		<section id="brand-craft">
-			<div class="brand-craft__image one-half">
+			<div class="brand-craft__image one-half wow fadeInLeft" data-wow-delay="0.5s">
 				<img src="./assets/images/vector/brand-craft.svg" alt="agency services" />
 			</div>
-			<div class="brand-craft__content one-half">
+			<div class="brand-craft__content one-half wow fadeInRight"  data-wow-delay="0.5s">
 				<h1 class="brand-craft__tilte title">Crafting Narratives <br /> That Bring Your <br /><span>Ideas</span>
 					To
 					<span>Life</span>
 				</h1>
-				<p class="brand-craft__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				<p class="brand-craft__desc wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
 					printer took a
 					galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of
@@ -124,12 +125,12 @@
 		</section>
 		<section id="services">
 			<div class="head">
-				<h1 class="services__title title">We do <span>everything</span> </h1>
-				<h3 class="subtitle">You may be interested in what we can offer you. More servicess <br />you can find
+				<h1 class="services__title title wow fadeInDown" data-wow-delay="0.5s">We do <span>everything</span> </h1>
+				<h3 class="subtitle wow fadeInUp" data-wow-delay="0.5s">You may be interested in what we can offer you. More servicess <br />you can find
 					below. We do <span>everything</span> at a <span>high level</span>. </h3>
 			</div>
 			<div class="services__grid">
-				<div class="services__grid-col services__grid-col--active">
+				<div class="services__grid-col services__grid-col--active wow fadeInUp" data-wow-delay="0.2s">
 					<div class="services__grid-icon-wrapper">
 						<svg xmlns="http://www.w3.org/2000/svg" width="47.506" height="39.59"
 							viewBox="0 0 47.506 39.59">
@@ -157,7 +158,7 @@
 						</i>
 					</div>
 				</div>
-				<div class="services__grid-col">
+				<div class="services__grid-col wow fadeInUp" data-wow-delay="0.4s">
 					<div class="services__grid-icon-wrapper">
 						<svg xmlns="http://www.w3.org/2000/svg" width="47.506" height="39.59"
 							viewBox="0 0 47.506 39.59">
@@ -185,7 +186,7 @@
 						</i>
 					</div>
 				</div>
-				<div class="services__grid-col">
+				<div class="services__grid-col wow fadeInUp" data-wow-delay="0.6s">
 					<div class="services__grid-icon-wrapper">
 						<svg xmlns="http://www.w3.org/2000/svg" width="47.506" height="39.59"
 							viewBox="0 0 47.506 39.59">
@@ -213,7 +214,7 @@
 						</i>
 					</div>
 				</div>
-				<div class="services__grid-col">
+				<div class="services__grid-col wow fadeInUp" data-wow-delay="0.8s">
 					<div class="services__grid-icon-wrapper">
 						<svg xmlns="http://www.w3.org/2000/svg" width="47.506" height="39.59"
 							viewBox="0 0 47.506 39.59">
@@ -241,7 +242,7 @@
 						</i>
 					</div>
 				</div>
-				<div class="services__grid-col">
+				<div class="services__grid-col wow fadeInUp" data-wow-delay="1s">
 					<div class="services__grid-icon-wrapper">
 						<svg xmlns="http://www.w3.org/2000/svg" width="47.506" height="39.59"
 							viewBox="0 0 47.506 39.59">
@@ -269,7 +270,7 @@
 						</i>
 					</div>
 				</div>
-				<div class="services__grid-col">
+				<div class="services__grid-col wow fadeInUp" data-wow-delay="1.2s">
 					<div class="services__grid-icon-wrapper">
 						<svg xmlns="http://www.w3.org/2000/svg" width="47.506" height="39.59"
 							viewBox="0 0 47.506 39.59">
@@ -302,9 +303,9 @@
 		</section>
 		<section id="testimonial" class="vertical">
 			<div class="head">
-				<h1 class="title">Our <span>Happy</span> clients</h1>
+				<h1 class="title wow fadeInDown" data-wow-delay="0.2s">Our <span>Happy</span> clients</h1>
 			</div>
-			<div class="slider" id="testimonial-slider">
+			<div class="slider wow fadeInUp" data-wow-delay="0.2s" id="testimonial-slider">
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<p>Your cooperation with TLW is a true
@@ -359,13 +360,13 @@
 		</section>
 		<section id="get-consult" class="vertical">
 			<div class="head">
-				<h1 class="title">Get a <span>Free</span><br /> Consultation</h1>
-				<h3 class="subtitle">Our <span>Goal</span> Is To Take Your Business To The <span>Next Stage</span></h3>
+				<h1 class="title wow fadeInDown" data-wow-delay="0.2s">Get a <span>Free</span><br /> Consultation</h1>
+				<h3 class="subtitle wow fadeInUp" data-wow-delay="0.2s">Our <span>Goal</span> Is To Take Your Business To The <span>Next Stage</span></h3>
 			</div>
-			<img src="assets/images/vector/lets-talk.svg" alt="agency servicess" />
+			<img class=" wow fadeInUp" data-wow-delay="0.2s" src="assets/images/vector/lets-talk.svg" alt="agency servicess" />
 		</section>
 		<section id="call-to-action">
-			<div class="call-to-action__wrapper">
+			<div class="call-to-action__wrapper wow fadeInUp" data-wow-delay="0.2s">
 				<input class="call-to-action__input" type="text" placeholder='Name' />
 				<input class="call-to-action__input" type="text" placeholder='Email' />
 				<input class="call-to-action__submit" type="submit" value="Let's Talk" />
@@ -373,7 +374,7 @@
 		</section>
 		<footer>
 			<div class="footer__widget-wrapper">
-				<div class="footer__widget widget-1">
+				<div class="footer__widget widget-1 wow fadeInUp" data-wow-delay="0.2s">
 					<h1 class="footer__widget-title">Address</h1>
 					<div class="footer__widget-content">
 						<p>25123th ave S Suit <br> 209 Fargo, ND 6265</p>
@@ -385,75 +386,35 @@
 						</ul> -->
 					</div>
 				</div>
-				<div class="footer__widget widget-2">
+				<div class="footer__widget widget-2 wow fadeInUp" data-wow-delay="0.2s">
 					<h1 class="footer__widget-title">Mail Us</h1>
 					<div class="footer__widget-content">
 						<p>Drop a mail at: <br> <a href="mailto:info@techlabwork.com">info@techlabwork.com</a></p>
 					</div>
 				</div>
-				<div class="footer__widget widget-3">
+				<div class="footer__widget widget-3 wow fadeInUp" data-wow-delay="0.2s">
 					<h1 class="footer__widget-title">Call Us</h1>
 					<div class="footer__widget-content">
 						<p>Welcome to call us:<br /><a href="tel:1234567890">1234 567 890</a></p>
 					</div>
 				</div>
-				<div class="footer__widget widget-4">
+				<div class="footer__widget widget-4 wow fadeInLeft" data-wow-delay="0.2s">
 					<img class="footer__widget-logo" width='250' height='100' src="assets/images/logo.svg" />
 					<p class="copyright">Copyright &#169; <span id="year"></span> Tech Lab Work Inc.</p>
 
 				</div>
 			</div>
-		</footer>
+		</footer> 
 		<div class="widgets">
 			<div class="cookie-container">
-				<p>
-					We use cookies in this website to give you the best experience on our
-					site and show you relevant ads. To find out more, read our
-					<a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
-				</p>
-			
-				<button class="button cookie-btn">
-					Accept
-				</button>
+				<p>We use cookies in this website to give you the best experience on our site and show you relevant ads. To find out more, read our <a href="#">policy</a> and <a href="#">cookie policy</a>.</p>
+				<button class="button cookie-btn">Accept</button>
 			</div>
 			<div class="backtotop"><a href="#"><img src="./assets/images/backtotop.svg" alt="" style="width: 40px;"></a></div>
 		</div>
-	</footer> 
-	<div class="widgets">
-		<div class="cookie-container">
-			<p>
-				We use cookies in this website to give you the best experience on our
-				site and show you relevant ads. To find out more, read our
-				<a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
-			</p>
-		
-			<button class="button cookie-btn">
-				Accept
-			</button>
-		</div>
-		<div class="backtotop"><a href="#"><img src="./assets/images/backtotop.svg" alt="" style="width: 40px;"></a></div>
-	</div>
-<div id="loood" class="loader__wrapper">
-	<ul class="loader">
-		<li class="loader__center"></li>
-		<li class="loader__item loader__item-1"></li>
-		<li class="loader__item loader__item-2"></li>
-		<li class="loader__item loader__item-3"></li>
-		<li class="loader__item loader__item-4"></li>
-		<li class="loader__item loader__item-5"></li>
-		<li class="loader__item loader__item-6"></li>
-		<li class="loader__item loader__item-7"></li>
-		<li class="loader__item loader__item-8"></li>
-	</ul>
-</div>
-	</div> <!-- Barbra Container End -->
-
-	<div class="transition-container">
-		<span id="from-top"></span>
-		<span id="from-bottom"></span>
-	</div>
 	<!-- Jquery  -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js" integrity="sha256-gHiUEskgBO+3ccSDRM+c5+nEwTGp64R99KYPfITpnuo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 	<script src="https://unpkg.com/@barba/core"></script>
@@ -462,59 +423,19 @@
 	<!-- owl slider -->
 	<script>
 		$('.owl-carousel').owlCarousel({
-			loop: true,
-			margin: 10,
+			loop: true,margin: 10,
 			dots: false,
+			items:1,
 			nav: true,
 			navText: [
 				'<img class="testimonial-nav" src="assets/images/vector/icons/left.svg" width="15" height="15" alt="">',
 				'<img class="testimonial-nav" src="assets/images/vector/icons/right.svg" width="15" height="15" alt="">'
 			],
 			autoplayTimeout: 3000,
-			autoplay: false,
-			// autoWidth: true,
+			autoplay: true,
 			smartSpeed: 1300,
-			// animateOut: 'fadeOut',
 			autoplayHoverPause: true,
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 1
-				},
-				1000: {
-					items: 1
-				}
-			}
 		})
-		$(".owl-carousel").owlCarousel({
-			nav: true,
-			navText: ['<img class="quote-bottom" src="./assets/images/vector/icons/check.svg" width="15" height="15" alt="">']
-		});
-																												// $('.owl-carousel').attr("width", "10%")
 	</script>
-
-
-<script>
-	// const loader__wrapper = document.querySelector('#loood');
-		const loader__wrapper = document.querySelector('#loood');
-		const loader = document.querySelector('.loader');
-
-		function init() {
-			setTimeout(() => {
-				// loader.style.opacity = 0;
-				// loader.style.display = 'block';
-
-				loader__wrapper.className += " loader__disable";
-				// setTimeout(() => (loader__wrapper.style.display = 'none'), 5000);
-				// main.style.opacity = 1;
-			}, 1000);
-		}
-
-
-		init(); 
-</script>
 </body>
-
 </html>

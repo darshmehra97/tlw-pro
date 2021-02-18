@@ -111,7 +111,7 @@ section {
 }
 @media (min-width:900px){
   .order-1{order: 1;}
-  .flex-flex-order-2{order: 2;}
+  .flex-order-2{order: 2;}
 }
 .after--cricle:after{
   content: url('/images/vector/hero/Artboard – 1.svg');
