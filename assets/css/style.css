@@ -240,6 +240,7 @@
         font-family: 'Poppins', sans-serif;
 	color: #7B7B7B;
 	font-size: 1.5em;
+  margin-top: 1.5rem;
 	font-weight: 600;
 }
 .services__grid-col--active .services__grid-title{
@@ -515,12 +516,12 @@ footer p{
 
 
 /* Contact Us */
-#contact .head .title{
+#contact .font-4rem {
 	font-size: 4rem;
 	/* color: #2870db; */
 }
 #contact .subtitle {
-	font-size: 2rem;
+	/* font-size: 2rem; */
   margin: .5em 0;
   line-height: 1.2em;
 }
@@ -554,9 +555,10 @@ footer p{
 }
 
 #contact ::placeholder {
-  color: #7B7B7B;
+  color: #fff;
 }
-#career ::placeholder {
+#contact .contact__form ::placeholder,
+#career .contact__form ::placeholder {
   color: #7B7B7B;
 }
 
@@ -584,7 +586,7 @@ footer p{
 	font-weight: 400;
 }
 
-#contact .button {
+#contact .contact__form .button {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -611,10 +613,7 @@ footer p{
 .contact__textarea:focus::placeholder{
   color: var(--primary-color) !important;
 }
-#map {
-	padding-left: 0;
-	padding-right: 0;
-}
+
 @media (min-width:900px){
   .flex{
     display: flex;
@@ -642,11 +641,12 @@ footer p{
 	margin: 6rem 0 4rem;
 }
 #career .subtitle {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	margin: 0.5em auto;
-	line-height: 1.2em;
+	line-height: 1.5em;
 	max-width: 452px;
-	font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 .center-img {
 	max-width: 65%;
@@ -654,7 +654,7 @@ footer p{
 	display: block;
 }
 @media (min-width:900px){
-  #career .button {
+  #career .contact__form .button {
 	  position: absolute;
 	  bottom: 0;
 	  right: 0;

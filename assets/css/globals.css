@@ -100,7 +100,7 @@ section {
 .subtitle {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-  font-size: clamp(14px, 1.3vw, 20px);
+  font-size: clamp(14px, 1.3vw, 17px);
 	color: var(--gray-medium-color);
 	margin: 1rem 0 2rem;
 } 
