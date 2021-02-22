@@ -216,7 +216,14 @@
 }
 
 
-
+/* Map */
+#map {
+	background-image: url('../images/right-ring.svg');
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: contain;
+	padding-bottom: 0;
+}
 
 /* Cookie Banner  */
 .cookie-container {

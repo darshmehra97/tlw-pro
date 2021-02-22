@@ -18,6 +18,9 @@ $name = $_POST['fname'];
 $email = $_POST['email'];
 $work_phone = $_POST['work_phone'];
 $company = $_POST['company'];
+$interested = $_POST['interested'];
+$call_time = $_POST['call_time'];
+$p_dsc = $_POST['p_dsc'];
 
 //Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -35,8 +38,8 @@ try {
     $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('info@techlabwork.com', 'Title');
-    $mail->addAddress('darshpreet.aim@gmail.com', 'Darsh');     //Add a recipient
+    $mail->setFrom('info@techlabwork.com', 'Quote Contact - Techlabwork.com ');
+    $mail->addAddress('darshpreet.aim@gmail.com', 'Admin');     //Add a recipient
     // $mail->addAddress('ellen@example.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
@@ -48,28 +51,28 @@ try {
     $docxType = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
     $pdfType = 'application/pdf';
 
-    if ($_FILES['attachment']['type'] == $docxType || $_FILES['attachment']['type'] == $pdfType) { 
+    // if ($_FILES['attachment']['type'] == $docxType || $_FILES['attachment']['type'] == $pdfType) { 
 
-        $mail->addAttachment($_FILES['attachment']['tmp_name'], $_FILES['attachment']['name']);
-    }
-    else {
-        die("You may only upload PDF and Microsoft Word documents through this form.");
-    }
+    //     $mail->addAttachment($_FILES['attachment']['tmp_name'], $_FILES['attachment']['name']);
+    // }
+    // else {
+    //     die("You may only upload PDF and Microsoft Word documents through this form.");
+    // }
     
      //Add attachments
     //$mail->addAttachment('./tmp/image.jpg', 'new.jpg');    //Optional name
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
+    $mail->Subject = 'Quote - Techlabwork.com';
     $mail->Body    = '
-                        <b>Name: </b>' . $name .' <br> 
-                        <b>Email:</b> ' . $email .' <br> 
-                        <b>Work Phone:</b> ' . $work_phone .' <br> 
-                        <b>Company:</b> ' . $company .' <br> 
-                        <b>File Name:</b> ' . $file_name .' <br> 
-                        <b>File Type:</b> ' . $file_type .' <br>  
-                        This is the HTML message body <b>in bold!</b>';
+                        <h2><b>Name: </b>' . $name .'</h2> <br> 
+                        <h2><b>Email:</b> ' . $email .' </h2><br> 
+                        <h2><b>Work Phone:</b> ' . $work_phone .'</h2> <br> 
+                        <h2><b>Company:</b> ' . $company .' </h2><br> 
+                        <h2><b>I am interested in:</b> ' . $interested .'</h2> <br> 
+                        <h2><b>Best time to call:</b> ' . $call_time .' </h2><br> 
+                        <h3><b>Project Description:</b> ' . $p_dsc .' </h3><br> ';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

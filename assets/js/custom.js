@@ -57,7 +57,7 @@ setTimeout(() => {
 // }
 
 // function handle(delta) {
-// 	var time = 0;
+// 	var time = 200;
 // 	var distance = 500;
 
 // 	$('html, body').stop().animate({
