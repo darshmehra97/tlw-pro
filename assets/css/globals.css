@@ -181,6 +181,30 @@ section {
 .icon {
 	width: 30px;
 }
+.social-links {
+	display: flex;
+}
+.social-links__item {
+	margin-right: 1rem;
+}
+.social-links__item a {
+	font-size: 1.3rem;
+	border: 1px solid #2870db;
+	padding: .3em .4em;
+  text-decoration: none !important;
+	border-radius: 38px;
+	width: 41px;
+	height: 41px;
+	display: flex;
+	transition: all 0.3s ease-in-out;
+}
+.social-links__item a:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.social-links__item a i {
+	margin: auto;
+}
 .backtotop {
 	position: fixed;
 	bottom: 1rem;

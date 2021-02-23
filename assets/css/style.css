@@ -84,11 +84,28 @@
   font-family: 'Poppins Semi Bold 600', sans-serif;
 }
 
-.get-quote_ {
+/* .get-quote_ {
   align-self: center;
   box-shadow: none;
   font-size: 1.1rem;
   padding: 0.5em 2em;
+} */
+.get-quote_ {
+	align-self: center;
+	box-shadow: none;
+	font-size: 1.1rem;
+	padding: 0.4em 1.6em;
+	position: relative;
+	padding-left: 3.4rem;
+}
+.get-quote_:hover {
+	color: #fff !important;
+}
+.get-quote_ .fa.fa-whatsapp {
+	position: absolute;
+	left: 14px;
+	top: 4px;
+	font-size: 33px;
 }
 .collapse-nav{
   -webkit-transform: translateX(30%) !important;
