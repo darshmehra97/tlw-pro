@@ -15,6 +15,9 @@ a{text-decoration: none;}
 a:hover:active:focus:focus-within:visited {
 	color: var(--primary-color);
 }
+button > a:hover {
+	color: #ffffff !important;
+}
 ::-webkit-input-placeholder { /* Edge */color: #fff;}
 :-ms-input-placeholder { /* Internet Explorer 10-11 */color: #fff;}
 ::placeholder {
@@ -46,6 +49,9 @@ p {
 	color: var(--gray-medium-color);
 	line-height: 1.6em;
 	margin-top: 2rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  color: var(--black-color);
 }
 h1>span,h2>span,h3>span,h4>span,h5>span{
   color: var(--primary-color);
@@ -103,10 +109,11 @@ section {
 .subtitle {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-  font-size: clamp(14px, 1.3vw, 17px);
+	font-size: clamp(14px, 1.3vw, 17px);
 	color: var(--gray-medium-color);
 	margin: 1rem 0 2rem;
-} 
+	line-height: 1.6em;
+}
 
 .container{
 	max-width: 79%;
@@ -146,6 +153,12 @@ section {
 }
 .center {
 	display: flex;
+	justify-content: center;
+}
+.center-content {
+	display: flex;
+	flex-direction: column;
+	place-items: start;
 	justify-content: center;
 }
 .head{

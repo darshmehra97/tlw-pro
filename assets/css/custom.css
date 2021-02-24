@@ -34,7 +34,7 @@
         position: absolute;
         bottom: -2.6em;
         right: -1.4em;
-        z-index: 0;
+        z-index: -1;
     }
 	@media (min-width:768px){
 		.hero__after {
@@ -177,13 +177,25 @@
 
 #testimonial {
 	background-image: url('../images/cloud-bg.svg');
-	padding: 8rem 0;
+	padding: 6rem 0;
 	background-repeat: no-repeat;
 	background-position: 110% 0;
 	background-size: contain;
 }
 #get-consult {
 
+}
+#get-consult .title {
+	margin-bottom: 2rem;
+}
+#get-consult .subtitle{
+	margin: 0 0 1rem 0;
+}
+#get-consult p {
+	margin: 0rem;
+}
+#get-consult .button{
+	margin-top: 2rem;
 }
 
 /* About Page */

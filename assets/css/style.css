@@ -28,6 +28,9 @@
     left: 0;
     right: 0;
 }
+header{
+  margin-bottom: 120px;
+}
 .navbar-collapse{
   display: flex;
 }
@@ -125,7 +128,7 @@
 /* ##############
   Hero Section */
 #hero{
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
   @media (min-width:768px){
   #header-hero{
@@ -142,6 +145,7 @@
 
 #header-hero h3.subtitle{
   margin:0 0 1em 0;
+  line-height: 1.5em;
 }
 
 #header-hero .hero__title{
@@ -185,7 +189,6 @@
 	background-repeat: no-repeat;
 	background-position: -20px 0;
 	background-size: contain;
-	padding-bottom: 0;
 }
 @media (min-width:1690px){
   .services__grid {
@@ -299,7 +302,7 @@
 {
   color: var(--primary-color);
 }
-.services__grid-col:hover .svg {
+.services__grid-col:hover svg path {
 	fill: #fff;
 }
 .services__grid-link {
@@ -310,7 +313,7 @@
 }
 .services__grid-link-icon {
 	background: var(--gray-light-color);
-	padding: 7px 9px 8px;
+	padding: 5px 9px 8px;
 	border-radius: 64px;
 	text-align: center;
 }
@@ -341,7 +344,12 @@
   position: relative;
 }
 #get-consult img{
-  margin-top: -13em;
+  /* margin-top: -13em; */
+}
+#get-consult {
+	background: #e5f0ff;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 /* / Brand Craft 2 
 ##################*/
@@ -512,8 +520,9 @@ footer a:hover{
   color: #2870db;
 	text-decoration: underline;
 }
-footer p{
-  margin-top: 1rem;
+footer p {
+	margin-top: 1rem;
+	font-family: 'Poppins', sans-serif !important;
 }
 @media (min-width:768px){
     .footer__widget-wrapper {
