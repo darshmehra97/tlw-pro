@@ -340,6 +340,9 @@ header{
     display: inline-block;
   }
 }
+#get-consult {
+	background: linear-gradient(90deg, #e5f0ff 0%, rgb(246, 250, 252) 100%);
+}
 #get-consult h1,h3{
   position: relative;
 }
@@ -484,9 +487,9 @@ footer {
 	width: 250px;
 }
 .footer__widget-wrapper {
-	border-top: 1px solid #2870db;
-    max-width: 80%;
-    padding: 2em 0 0;
+	border-top: 1px dashed #2870db;
+	max-width: 80%;
+	padding: 4em 0 0;
 	margin: auto;
 }
 .footer__widget-title{
