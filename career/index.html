@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="../assets/css/loader.css">
     <link rel="stylesheet" href="../assets/css/animate.min.css">
 
-    <title>Career - A Next Generation Agency</title>
+    <title>Career | TechLab Work - A Next Generation Agency</title>
 </head>
 
 <body id="career">
@@ -109,39 +109,53 @@
                                 </h1>
                                 <!-- <h3 class="subtitle">Be always in <br /> touch</h3> -->
                             </div>
-                            <div class="contact__form-input">
-                                <input type="text" class="form__input input wow fadeInRight" data-wow-delay=".2s"
-                                    placeholder="Name" />
-                                <input type="email" class="form__input input wow fadeInRight" data-wow-delay=".4s"
+                            <form method="POST" action="../assets/mailing/career.php" class="contact__form-input" enctype="multipart/form-data">
+                                <input name="job_title" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".2s"
+                                    placeholder="Job Title" />
+                                <input name="fname" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".2s" placeholder="Name" />
+                                <input name="email" type="email" class="form__input input  wow fadeInRight" data-wow-delay=".4s"
                                     placeholder="Email" />
-                                <input type="tel" class="form__input input wow fadeInRight" data-wow-delay=".6s"
-                                    placeholder="Work Phone" />
-                                <input type="text" class="form__input input wow fadeInRight" data-wow-delay=".8s"
-                                    placeholder="Company" />
-                                <select class="form__select wow fadeInRight" data-wow-delay="1s" name="interest">
-                                    <option value="">I am interested in</option>
-                                    <optgroup label="Services">
-                                        <option value="Mobile App Development">Mobile App Development</option>
-                                        <option value="Enterprise Software Development">Enterprise Software Development
-                                        </option>
-                                        <option value="Web Development">Web Development</option>
-                                        <option value="Dedicated Teams">Dedicated Teams</option>
-                                        <option value="IT Consulting">IT Consulting</option>
-                                        <option value="Other">Other</option>
-                                    </optgroup>
-                                    <optgroup label="Technologies">
-                                        <option value="Internet of Things">Internet of Things</option>
-                                        <option value="Blockchain">Blockchain</option>
-                                        <option value="Augmented Reality">Augmented Reality</option>
-                                        <option value="Artificial Intelligence">Artificial Intelligence</option>
-                                        <option value="Cloud Computing">Cloud Computing</option>
-                                        <option value="UX / UI Design">UX / UI Design</option>
-                                    </optgroup>
+                                <input name="dob" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".4s"
+                                    placeholder="Date of Birth" />
+                                    <label for="dob">Date of Birth</label>
+                                <input id="dob" name="dob" type="date" value="1997-08-19" class="form__input input  wow fadeInRight" data-wow-delay=".4s" placeholder="Date of Birth">
+                                <input name="phone" type="tel" class="form__input input  wow fadeInRight" data-wow-delay=".6s"
+                                    placeholder="Phone" />
+                                <input name="current_employer" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
+                                    placeholder="Current Employer" />
+                                <input name="it_experience" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
+                                    placeholder="IT Experience" />
+                                <input name="present_salary" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
+                                    placeholder="Present Salary" />
+                                <input name="expected_salary" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
+                                    placeholder="Expected Salary" />
+                                <input name="educational_ualification" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
+                                    placeholder="Educational Qualification" />
+                                <select name="roles_played" class="form__select wow fadeInRight" data-wow-delay="1s">
+                                    <option selected="selected" value="Select Roles Played">Select Roles Played</option>
+                                    <option value="Business Manager">Business Manager</option>
+                                    <option value="Consultant">Consultant</option>
+                                    <option value="Delivery Head / Manager">Delivery Head / Manager</option>
+                                    <option value="Domain Consultant">Domain Consultant</option>
+                                    <option value="Facilities/Admin Manager">Facilities/Admin Manager</option>
+                                    <option value="Finance/Accounts Manager">Finance/Accounts Manager</option>
+                                    <option value="Marketing Manager">Marketing Manager</option>
+                                    <option value="Module Leader">Module Leader</option>
+                                    <option value="Practice Head">Practice Head</option>
+                                    <option value="Program Manager">Program Manager</option>
+                                    <option value="Programmer">Programmer</option>
+                                    <option value="Project Manager">Project Manager</option>
+                                    <option value="Quality Manager">Quality Manager</option>
+                                    <option value="Sales Support Manager">Sales Support Manager</option>
+                                    <option value="Software Testing">Software Testing</option>
+                                    <option value="Solution Architect">Solution Architect</option>
+                                    <option value="System Administrator">System Administrator</option>
+                                    <option value="others">others</option>
                                 </select>
-                                <textarea class="contact__textarea wow fadeInRight" data-wow-delay="1.2s"
-                                    placeholder="Project description" cols="20" rows="4"></textarea>
-                                <input type="submit" class="button wow fadeInUp" data-wow-delay=".2s" value="Send" />
-                            </div>
+                                <textarea name="summary" class="contact__textarea wow fadeInRight" data-wow-delay="1.4s"
+                                    placeholder="Summary" cols="20" rows="4"></textarea>
+                                <input type="submit" class="button" value="Send" />
+                            </form>
                         </div>
                     </div>
                 </div>
