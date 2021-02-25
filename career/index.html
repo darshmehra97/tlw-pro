@@ -115,22 +115,41 @@
                                 <input name="fname" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".2s" placeholder="Name" />
                                 <input name="email" type="email" class="form__input input  wow fadeInRight" data-wow-delay=".4s"
                                     placeholder="Email" />
-                                <input name="dob" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".4s"
-                                    placeholder="Date of Birth" />
-                                    <label for="dob">Date of Birth</label>
-                                <input id="dob" name="dob" type="date" value="1997-08-19" class="form__input input  wow fadeInRight" data-wow-delay=".4s" placeholder="Date of Birth">
                                 <input name="phone" type="tel" class="form__input input  wow fadeInRight" data-wow-delay=".6s"
                                     placeholder="Phone" />
                                 <input name="current_employer" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
                                     placeholder="Current Employer" />
-                                <input name="it_experience" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
-                                    placeholder="IT Experience" />
+                                <select name="it_experience" class="form__select wow fadeInRight" data-wow-delay="1s">
+                                    <option selected="selected" value="Select IT Experience">Select IT Experience</option>
+                                    <option value="1-2 YEAR">1-2 YEAR</option>
+                                    <option value="2-4 YEAR">2-4 YEAR</option>
+                                    <option value="4-6 YEAR">4-6 YEAR</option>
+                                    <option value="6-10 YEAR">6-10 YEAR</option>
+                                    <option value="Above 10 Years">Above 10 Years</option>
+                                </select>
                                 <input name="present_salary" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
                                     placeholder="Present Salary" />
                                 <input name="expected_salary" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
                                     placeholder="Expected Salary" />
-                                <input name="educational_ualification" type="text" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
-                                    placeholder="Educational Qualification" />
+                                <select name="educational_qualification" class="form__select wow fadeInRight" data-wow-delay="1s">
+                                    <option selected="selected" value="Select Educational Qualification">Select Educational Qualification</option>
+                                    <option value="A/O Level">A/O Level</option>
+                                    <option value="B Com">B Com</option>
+                                    <option value="B Sc">B Sc</option>
+                                    <option value="B.S">B.S</option>
+                                    <option value="BA">BA</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="BCS">BCS</option>
+                                    <option value="BE / BTech">BE / BTech</option>
+                                    <option value="M Sc.">M Sc.</option>
+                                    <option value="M.S">M.S</option>
+                                    <option value="MBA">MBA</option>
+                                    <option value="MCA">MCA</option>
+                                    <option value="MD">MD</option>
+                                    <option value="MTech">MTech</option>
+                                    <option value="Phd">Phd</option>
+                                    <option value="Other Qualifications">Other Qualifications</option>
+                                </select>
                                 <select name="roles_played" class="form__select wow fadeInRight" data-wow-delay="1s">
                                     <option selected="selected" value="Select Roles Played">Select Roles Played</option>
                                     <option value="Business Manager">Business Manager</option>
@@ -152,9 +171,13 @@
                                     <option value="System Administrator">System Administrator</option>
                                     <option value="others">others</option>
                                 </select>
+                                <label>Upload Your Resume</label>
+                                <input name="attachment" type="file" class="form__input input  wow fadeInRight" data-wow-delay=".8s"
+                                    value="Upload Your Resume" />
+                                <p class="note"><b>Note:</b> You can upload only Docx and PDF File</p>
                                 <textarea name="summary" class="contact__textarea wow fadeInRight" data-wow-delay="1.4s"
                                     placeholder="Summary" cols="20" rows="4"></textarea>
-                                <input type="submit" class="button" value="Send" />
+                                <input type="submit" class="button" value="Submit" />
                             </form>
                         </div>
                     </div>
@@ -162,20 +185,8 @@
             </div>
         </div>
 </section>
-    <section id="get-consult" class="vertical">
-        <div class="head  wow fadeInDown" data-wow-delay="0.2s">
-            <h1 class="title">Get a <span>Free</span><br /> Consultation</h1>
-            <h3 class="subtitle">Our <span>Goal</span> Is To Take Your Business To The <span>Next Stage</span></h3>
-        </div>
-        <img src="../assets/images/vector/lets-talk.svg" alt="agency servicess" />
-    </section>
-    <section id="call-to-action">
-        <div class="call-to-action__wrapper   wow fadeInUp" data-wow-delay="0.2s">
-            <input class="call-to-action__input" type="text" placeholder='Name' />
-            <input class="call-to-action__input" type="text" placeholder='Email' />
-            <input class="call-to-action__submit" type="submit" value="Let's Talk" />
-        </div>
-    </section>
+ 
+  </table>
     <footer>
         <div class="footer__widget-wrapper">
             <div class="footer__widget widget-1 wow fadeInUp" data-wow-delay="0.2s">

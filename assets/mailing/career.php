@@ -14,14 +14,16 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
 // require './autoload.php';
 
+$job_title = $_POST['job_title'];
 $name = $_POST['fname'];
 $email = $_POST['email'];
-$work_phone = $_POST['work_phone'];
-$company = $_POST['company'];
-$interested = $_POST['interested'];
-$call_time = $_POST['call_time'];
-$p_dsc = $_POST['p_dsc'];
-
+$phone = $_POST['phone'];
+$current_employer = $_POST['current_employer'];
+$it_experience = $_POST['it_experience'];
+$present_salary = $_POST['present_salary'];
+$expected_salary = $_POST['expected_salary'];
+$roles_played = $_POST['roles_played'];
+$summary = $_POST['summary'];
 //Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -47,17 +49,17 @@ try {
     
     //print_r($_FILES['attachment']['type']); exit;
 
-    //Attachments
-    $docxType = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
-    $pdfType = 'application/pdf';
+        //Attachments
+        $docxType = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+        $pdfType = 'application/pdf';
 
-    // if ($_FILES['attachment']['type'] == $docxType || $_FILES['attachment']['type'] == $pdfType) { 
+        if ($_FILES['attachment']['type'] == $docxType || $_FILES['attachment']['type'] == $pdfType) { 
 
-    //     $mail->addAttachment($_FILES['attachment']['tmp_name'], $_FILES['attachment']['name']);
-    // }
-    // else {
-    //     die("You may only upload PDF and Microsoft Word documents through this form.");
-    // }
+            $mail->addAttachment($_FILES['attachment']['tmp_name'], $_FILES['attachment']['name']);
+        }
+        else {
+            die("You may only upload PDF and Microsoft Word documents through this form.");
+        }
     
      //Add attachments
     //$mail->addAttachment('./tmp/image.jpg', 'new.jpg');    //Optional name
@@ -65,14 +67,17 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Quote - Techlabwork.com';
-    $mail->Body    = '<style>h3{margin:0}</style>
-                        <h3>Name: ' . $name .'</h3>  
-                        <h3>Email: ' . $email .' </h3> 
-                        <h3>Work Phone: ' . $work_phone .'</h3>  
-                        <h3>Company: ' . $company .' </h3> 
-                        <h3>I am interested in: ' . $interested .'</h3>  
-                        <h3>Best time to call: ' . $call_time .' </h3> 
-                        <h3>Project Description: ' . $p_dsc .' </h3> ';
+    $mail->Body    = '
+                    <h3>Job Title: ' . $job_title . '</h3>
+                    <h3>Name: ' . $name . '</h3>
+                    <h3>Email: ' . $email . '</h3>
+                    <h3>Phone: ' . $phone . '</h3>
+                    <h3>Current Employer: ' . $current_employer . '</h3>
+                    <h3>It Experience: ' . $it_experience . '</h3>
+                    <h3>Present Salary: ' . $present_salary . '</h3>
+                    <h3>Expected Salary: ' . $expected_salary . '</h3>
+                    <h3>Roles Played: ' . $roles_played . '</h3>
+                    <h3>Summary: ' . $summary . '</h3>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
@@ -138,7 +143,39 @@ try {
 </head>
 
 <body>
-
+ <!-- <table style="border: 1px solid #d7d7d7 !important; padding: 10px 24px !important;text-align: left !important;">
+      <tr style="border: 1px solid #d7d7d7 !important; padding: 10px 24px !important;text-align: left !important;">
+          <th style="border: 1px solid #d7d7d7 !important; padding: 10px 24px !important;text-align: left !important;">Job Title</th>
+          <td>_____</td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td>_____</td>
+      </tr>
+      <tr>
+          <th>Email</th>
+          <td>_____</td>
+      </tr>
+      <tr>
+        <th>Phone</th>
+        <td>_____</td>
+      </tr>
+      <tr>
+          <th>Kush be</th>
+          <td>_____</td>
+      </tr>
+      <tr>
+        <th>era gera</th>
+        <td>_____</td>
+      </tr>
+      <tr>
+          <th>Chak de</th>
+          <td>_____</td>
+      </tr>
+      <tr>
+        <th>Fate</th>
+        <td>_____</td>
+      </tr> -->
     <section id="formSubmitted">
         <h1 class="title">Thanks You!</h1>
         <p>Form has been successfully submitted.</p>

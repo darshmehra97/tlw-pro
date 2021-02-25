@@ -429,6 +429,12 @@ header{
 	padding-bottom: 0;
   grid-template-columns: .7fr 1fr;
 }
+.brand-value__image{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+}
 .brand-value__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -445,6 +451,7 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 1rem 2rem;
 }
 .brand-value__icon {
 	margin-right: 33px;
@@ -620,11 +627,15 @@ footer p {
 	color: #A8A8A8;
 	/* font-weight: 400; */
 	margin: 2rem 0;
-	width: 100%;
+	/* width: 100%; */
+  display: inline-block;
+  padding: 1em;
 	border-bottom: 1px solid #ABABABAB;
 	font-weight: 400;
 }
-
+label{
+	color: #A8A8A8;
+}
 #contact .contact__form .button {
 	position: absolute;
 	bottom: 0;
@@ -677,7 +688,7 @@ footer p {
 
 
 #career .head {
-	margin: 6rem 0 4rem;
+	margin: 0rem 0 4rem;
 }
 #career .subtitle {
 	font-size: 0.9rem;
@@ -711,6 +722,9 @@ footer p {
 	align-items: center;
   grid-auto-flow: dense !important;
 }
+/* #services .subtitle {
+	margin: 1em 0 0;
+} */
 @media (max-width:768px){
   #services section{
     padding: 0 !important;

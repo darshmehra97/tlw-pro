@@ -200,7 +200,7 @@
 
 /* About Page */
 #about{
-	padding-top: 9rem;
+	/* padding-top: 9rem; */
 }
 .col-md-6.about__image img {
 	width: 80%;

@@ -42,13 +42,20 @@ background: linear-gradient(90deg, rgba(237,248,252,1) 0%, rgba(246,250,252,1) 1
 a {
 	color: inherit;
 }
-p {
+p{
 	font-size: 16px;
 	font-family: "Poppins", sans-serif;
   font-weight:300;
 	color: var(--gray-medium-color);
 	line-height: 1.6em;
 	margin-top: 2rem;
+}
+ul li{
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	color: var(--gray-medium-color);
+	font-weight:300;
+	line-height: 1.6em;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
   color: var(--black-color);
@@ -114,10 +121,17 @@ section {
 	margin: 1rem 0 2rem;
 	line-height: 1.6em;
 }
-
+.note {
+	font-size: 12px;
+	margin: 1em 0;
+	color: #cbcbcb;
+}
 .container{
 	max-width: 79%;
 	margin: auto;
+}
+.no-space{
+	margin-top: 0;
 }
 @media (min-width:900px){
   .order-1{order: 1;}
