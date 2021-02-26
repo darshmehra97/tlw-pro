@@ -514,7 +514,7 @@ footer {
 footer ul{
   padding:0;
 }
-footer ul li {
+.social-links__item {
 	list-style: none;
 	font-family: 'Poppins ExtraLight', sans-serif;
 	color: #659ff5;
@@ -533,6 +533,15 @@ footer a:hover{
 footer p {
 	margin-top: 1rem;
 	font-family: 'Poppins', sans-serif !important;
+}
+footer .button {
+	padding: 6px 22px;
+	color: #fff;
+	margin: 1rem 0;
+	font-size: 15px;
+}
+footer .button a{ 
+  color:#fff
 }
 @media (min-width:768px){
     .footer__widget-wrapper {
@@ -663,7 +672,37 @@ label{
 .contact__textarea:focus::placeholder{
   color: var(--primary-color) !important;
 }
-
+.info-card p {
+	padding-left: 1.3em;
+	margin: 1em 0;
+}
+#location h2.title {
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+.info-card .subheading {
+	margin-bottom: 0;
+}
+.info-card__content p {
+	margin: 0;
+}
+.info-card__content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+}
+.info-card__content i {
+	margin: 0;
+	font-size: 1.6rem;
+  color: var(--primary-color);
+}
+.info-card .social-links {
+	padding: 0;
+	margin: 1em 0;
+}
+.info-card{
+	margin-bottom: 2rem;
+}
 @media (min-width:900px){
   .flex{
     display: flex;
@@ -675,7 +714,7 @@ label{
   .flex-md-7{
     flex-basis: 60%;
   }
-  #map .flex-md-5{
+  #location .flex-md-5{
     padding: 0 3rem;
   }
 }

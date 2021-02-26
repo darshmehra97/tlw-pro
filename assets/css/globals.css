@@ -121,6 +121,13 @@ section {
 	margin: 1rem 0 2rem;
 	line-height: 1.6em;
 }
+.subheading {
+	font-size: 1.3rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	color: #2870db;
+	margin: 0 0 1rem;
+}
 .note {
 	font-size: 12px;
 	margin: 1em 0;
@@ -195,7 +202,7 @@ section {
   font-size: clamp(12px, 1.3vw, 18px);
   border-radius: 2rem;
   border-bottom-right-radius: 6px;
-  font-family: 'Poppins Semi Bold 600', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
   box-shadow: rgb(40, 112, 219) 0px 0 0px;
